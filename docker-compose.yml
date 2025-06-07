@@ -2,10 +2,9 @@ version: "3.9"
 
 services:
   radarr-jellyfin-notifier:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: radarr-jellyfin-notifier
+    build: https://github.com/tommekevda/radarr-jellyfin-notifier.git
+    container_name: radarr-jellyfin-notifier
+    restart: unless-stopped
     ports:
       - "5001:5001"
     # volumes:
