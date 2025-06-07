@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY uv.lock .
 
-RUN pip install --no-cache-dir uv && uv install
+RUN pip install --no-cache-dir uv && uv sync
 
 COPY . .
 

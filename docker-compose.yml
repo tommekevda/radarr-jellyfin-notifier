@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   radarr-jellyfin-notifier:
     build: https://github.com/tommekevda/radarr-jellyfin-notifier.git
