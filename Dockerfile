@@ -2,11 +2,9 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY uv.lock .
+COPY . .
 
 RUN pip install --no-cache-dir uv && uv sync
-
-COPY . .
 
 EXPOSE 5001
 
