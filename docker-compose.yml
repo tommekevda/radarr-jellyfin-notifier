@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: radarr-jellyfin-notifier
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/app
+    command: uv run main.py
