@@ -42,15 +42,15 @@ The docker-compose file builds the Docker image named `radarr-jellyfin-notifier`
 version: '3.9'
 
 services:
-  app:
+  radarr-jellyfin-notifier:
     build:
       context: .
       dockerfile: Dockerfile
     image: radarr-jellyfin-notifier
     ports:
       - "5001:5001"
-    volumes:
-      - .:/app
+    # volumes:
+    #   - .:/app
     command: uv run main.py
 ```
 
