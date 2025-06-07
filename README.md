@@ -64,6 +64,8 @@ services:
   - `X-Jellyfin-Api-Key`: Your Jellyfin API key
 - Save and test the webhook.
 
+![Alt text](readme/radarr.png)
+
 ## Running Locally (without Docker)
 
 Make sure you have `uv` installed and your dependencies in `uv.lock`.
