@@ -77,7 +77,3 @@ uv run main.py
 ```
 
 The app will listen on port 5001.
-
-## License
-
-MIT License
