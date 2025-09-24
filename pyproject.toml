@@ -1,10 +1,7 @@
 [project]
 name = "radarr-jellyfin-trigger"
-version = "0.1.0"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "flask>=3.1.1",
-    "requests>=2.32.3",
-]
+dependencies = ["flask>=3.1.1", "requests>=2.32.3"]
